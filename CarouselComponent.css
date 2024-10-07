@@ -1,0 +1,30 @@
+/* Custom styles for Swiper pagination */
+.swiper-pagination-bullet {
+  background-color: gray !important; /* Change bullet color to orange */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: darkorange !important; /* Change active bullet color */
+}
+/* CarouselComponent.css */
+
+.mySwiper {
+  position: relative; /* Ensures Swiper container acts as a relative parent */
+  padding-bottom: 40px; /* Add extra space at the bottom for the pagination */
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -20px; /* Position the pagination dots below the Swiper container */
+  left: 150%;
+}
+
+/* Increase the size of pagination dots */
+.swiper-pagination-bullet {
+  width: 18px; /* Increase the width of the dots */
+  height: 18px; /* Increase the height of the dots */
+  margin: 0 10px !important;/* Increase the gap between dots */
+  opacity: 1; /* Ensure the bullets are fully visible */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
